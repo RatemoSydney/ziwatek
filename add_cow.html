@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Cow</title>
+    <link rel="stylesheet" href="./css/add.css">
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="card">
+            <h1>Add a New Cow</h1>
+            <form id="cowForm">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="breed">Breed:</label><br>
+                <input type="text" id="breed" name="breed" required><br>
+
+                <label for="father">Father:</label><br>
+                <input type="text" id="father" name="father" required><br>
+
+                <label for="mother">Mother:</label><br>
+                <input type="text" id="mother" name="mother" required><br>
+
+                <label for="children">Children:</label><br>
+                <input type="text" id="children" name="children" required><br>
+
+                <label for="dob">Date of Birth:</label><br>
+                <input type="date" id="dob" name="dob" required><br>
+
+                <label for="age">Age:</label><br>
+                <input type="number" id="age" name="age" required><br>
+
+                <label for="birthDate">Last Birth Date:</label><br>
+                <input type="date" id="birthDate" name="birthDate" required><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div class="card">
+            <h1>Cows</h1>
+            <table id="cowTable">
+                <tr>
+                    <th>Name</th>
+                    <th>Breed</th>
+                    <th>Father</th>
+                    <th>Mother</th>
+                    <th>Children</th>
+                    <th>DOB</th>
+                    <th>Age</th>
+                    <th>Last Birthdate</th>
+                    <!-- Add the rest of your table headers here -->
+                </tr>
+            </table>
+        </div>
+    </div>
+<a href="reports.html">reports</a>
+
+<script src="./js/cow.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Reports</title>
+
+    <style>
+        /* Style the body */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        /* Style the cards */
+        .card,
+        .card1,
+        .card2 {
+            width: 80%;
+            /* default width for mobile devices */
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        /* Media query for tablets and larger devices */
+        @media (min-width: 768px) {
+
+            .card,
+            .card1,
+            .card2 {
+                width: 50%;
+                /* width for tablets and larger devices */
+            }
+        }
+
+        /* Media query for desktops and larger devices */
+        @media (min-width: 1024px) {
+            .card,
+            .card1,
+            .card2 {
+                width: 50%;
+                /* width for desktops and larger devices */
+            }
+        }
+
+        /* Style the header */
+        h1 {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            margin: 0;
+        }
+
+        /* Style the tables */
+        #reportTable,
+        #cowTable {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+
+        #reportTable th,
+        #reportTable td,
+        #cowTable th,
+        #cowTable td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        #reportTable tr:nth-child(even),
+        #cowTable tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #reportTable tr:hover,
+        #cowTable tr:hover {
+            background-color: #ddd;
+        }
+
+        #reportTable th,
+        #cowTable th {
+            background-color: #333;
+            color: white;
+        }
+
+        /* Style the chart container */
+        #myChart {
+            max-width: 100%;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Reports</h1>
+
+    <div class="card">
+        <!-- You can use a table to display the data -->
+        <table id="reportTable">
+            <h1>Old Cow Records</h1>
+            <tr>
+                <th>Cow ID</th>
+                <th>Morning</th>
+                <th>Noon</th>
+                <th>Evening</th>
+                <th>Total</th>
+                <th>Difference</th>
+            </tr>
+            <!-- The data rows will be added here by your JavaScript code -->
+        </table>
+    </div>
+
+    <div class="card1">
+        <!--Gave the chart its own container for responsiveness.-->
+        <div>
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
+
+    <div class="card2">
+        <table id="cowTable">
+            <h1>New Cow Records</h1>
+            <tr>
+                <th>Name</th>
+                <th>Breed</th>
+                <th>Father</th>
+                <th>Mother</th>
+                <th>Children</th>
+                <th>DOB</th>
+                <th>Age</th>
+                <th>Last Birthdate</th>
+            </tr>
+            <!-- The cow data rows will be added here by your JavaScript code -->
+        </table>
+    </div>
+
+
+    <!-- Add this at the end of your HTML file -->
+    <button>
+        <a href="milkrecords.html">Go to Form
+            <div class="btn btn__primary"></div>
+        </a>
+    </button>
+
+    <a href="production.html">Dashboard</a>
+    <a href="add_cow.html">add</a>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/reports.js"></script>
+</body>
+
+</html>
