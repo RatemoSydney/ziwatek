@@ -1,5 +1,5 @@
 function weatherWizard(){
-    let apiKey = '9da597c47ba44e7ba434f530653fc329';
+    let apiKey = '{YOUR API KEY}';
 
     const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=Machakos&appid=${apiKey}&units=metric`,
             forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=Machakos&appid=${apiKey}&units=metric`;
