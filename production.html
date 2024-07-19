@@ -8,6 +8,7 @@
   <link href="https://unpkg.com/i18n-switch@2.0.1/style/I18NSwitch.css" rel="stylesheet" />
   <link rel="stylesheet" href="./css/production.css">
   <link rel="shortcut icon" href="/images/ziwatek-circle.png" type="image/x-icon">
+  <link rel="stylesheet" href="/css/weather.css">
 </head>
 
 <body>
@@ -584,14 +585,14 @@
         <line x1="9" y1="9" x2="15" y2="15" />
       </svg>
     </button>
+
     <div class="projects-section-header">
       <p>Noticeboard</p>
     </div>
+
     <div class="messages">
       <div class="message-box">
-        <img
-          src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80"
-          alt="profile image">
+        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80" alt="profile image">
         <div class="message-content">
           <div class="message-header">
             <div class="name">Stephanie</div>
@@ -615,6 +616,7 @@
           </p>
         </div>
       </div>
+
       <div class="message-box">
         <img
           src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80"
@@ -642,6 +644,7 @@
           </p>
         </div>
       </div>
+
       <div class="message-box">
         <img
           src="https://images.unsplash.com/photo-1543965170-4c01a586684e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDZ8fG1hbnxlbnwwfDB8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"
@@ -669,6 +672,7 @@
           </p>
         </div>
       </div>
+
       <div class="message-box">
         <img
           src="https://images.unsplash.com/photo-1533993192821-2cce3a8267d1?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTl8fHdvbWFuJTIwbW9kZXJufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"
@@ -697,11 +701,32 @@
         </div>
       </div>
     </div>
+
+    <div class="weatherbox">
+      <h1>Current Weather In Machakos</h1>
+
+      <div class="citybox">
+          <div class="current-forecast">
+              <h2 class="city"></h2>
+              <img src="" id="weathericon" alt="weather icon">
+              <div class="temp-info"></div>
+              <div class="weather-info"></div>
+          </div>
+      </div>
+
+      <!--
+        => This part is due for an update. It needs to automatically get location and give the  current weather for the location.
+        => The section also needs its own section, instead of being in the notification bar.
+      -->
+
+    </div>
+
   </div>
   </div>
   </div>
   <!-- partial -->
   <script src="./js/production.js"></script>
+  <script src="./js/weather.js"></script>
 
 </body>
 
