@@ -1,0 +1,50 @@
+.weatherbox{
+    width: 100%;
+    height: fit-content;
+    backdrop-filter: blur(2em); 
+    border-top: 1px solid var(--message-box-border);
+    padding: 16px;
+
+    h1{
+        width: fit-content;
+        padding: 10px 0 20px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--main-color);
+        margin: 0;
+    }
+    
+    div{
+        width: 100%;
+        height: fit-content;
+    }
+}
+
+.citybox{
+    display: grid; /*grid*/
+    gap: 20px;
+    padding: 10px 15px;
+    place-content: center;
+    
+    font-size: 14px;
+    line-height: 20px;
+    margin: 8px 0;
+    color: var(--secondary-color);
+    opacity: 0.7;
+
+    .current-forecast{
+        place-self: center;
+        width: fit-content;
+        height: fit-content;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        gap: 0;
+
+        .weather-icon{
+            width: 180px;
+            height: 180px;
+        }
+    }
+}
